@@ -1,0 +1,39 @@
+.preloader{
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    background-color:#454d55!important;
+    color:#fff;
+    height:100vh;
+    width:100%;
+    transition:height .2s linear;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:9999
+} 
+
+.flex-column{
+    -webkit-flex-direction:column!important;
+    -ms-flex-direction:column!important;
+    flex-direction:column!important
+}
+
+.animation__shake{
+    -webkit-animation:shake 1.5s;
+    animation:shake 1.5s
+}
+
+.justify-content-center{
+    -webkit-justify-content:center!important;
+    -ms-flex-pack:center!important;
+    justify-content:center!important
+}
+
+.align-items-center{
+    -webkit-align-items:center!important;
+    -ms-flex-align:center!important;
+    align-items:center!important
+}
+
+

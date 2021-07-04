@@ -43,13 +43,28 @@
 
     <!-- MASTER  STYLESHEET  -->
     <link id="lgx-master-style" rel="stylesheet" href="assets/_frontend/emeet/css/style-red.min.css" media="all"/>
+    <link rel="stylesheet" href="assets/_frontend/emeet/css/preloader.css" media="all"/>
 
     <!-- MODERNIZER CSS  -->
     <script src="assets/_frontend/emeet/js/vendor/modernizr-2.8.3.min.js"></script>
+
+     <!-- toTop -->
+     <style rel="stylesheet">
+        #toTop {
+            bottom: 1.25rem;
+            position: fixed;
+            right: 1.25rem;
+            display: none;
+        };
+    </style>
 </head>
 
 <body class="home">
-    <div class="lgx-container ">
+    <div class="lgx-container">
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center" id="hidePL">
+            <img class="animation__shake" src="assets/images/logo/cid6.png" alt="Logo" height="200" width="200">
+        </div>
         
         <!--HEADER-->
         <header>
@@ -189,6 +204,11 @@
             <!--GOOGLE MAP END-->
         </main>
 
+        <!-- back to top -->
+        <a id="toTop" href="#" class="lgx-btn lgx-btn-sm" role="button" aria-label="Scroll to top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+
         <!--FOOTER-->
         <footer>
             <div id="lgx-footer" class="lgx-footer lgx-footer-black"> <!--lgx-footer-white-->
@@ -287,5 +307,20 @@
 
     <!-- CUSTOM SCRIPT  -->
     <script src="assets/_frontend/emeet/js/custom.script.js"></script>
+    <!-- toTop -->
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+    </script>
+    <script>
+        $(function() {
+            setTimeout(function() { $("#hidePL").fadeOut(1500); }, 1000)
+        });
+    </script>
 </body>
 </html>
