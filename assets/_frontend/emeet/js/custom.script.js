@@ -280,7 +280,7 @@
 
                     + '<span class="lgx-hr">%H <i> Hour </i></span> '
 
-                    + '<span class="lgx-min">%M <i> Minutes </i></span> '
+                    + '<span class="lgx-min">%M <i> Minute </i></span> '
 
                     + '<span class="lgx-sec">%S <i> Second </i></span>'
 
