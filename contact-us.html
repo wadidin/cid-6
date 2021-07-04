@@ -116,54 +116,72 @@
         </section> <!--//.Banner Inner-->
 
         <main>
-            <div class="lgx-page-wrapper lgx-page-wrapper-none">
-                 <!--TRAVEL INFO-->
+            <div class="lgx-page-wrapper">
+                <!--News-->
                 <section>
-                    <div id="lgx-travelinfo" class="lgx-travelinfo">
-                        <div class="lgx-inner">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="lgx-heading">
-                                            <h2 class="heading">Event Information</h2>
-                                            <h3 class="subheading">Conferences dedicated to building remarkable events.</h3>
-                                        </div>
-                                    </div>
-                                    <!--//main COL-->
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="lgx-travelinfo-content">
-                                            <div class="lgx-travelinfo-single">
-                                                <img src="assets/_frontend/emeet/img/info-icon1.png" alt="location"/>
-                                                <h3 class="title">Venue</h3>
-                                                <p class="info">Docklands Convention Centre 58 Wurundjeri Way Dablin, 3000</p>
-                                            </div>
-                                            <div class="lgx-travelinfo-single">
-                                                <img src="assets/_frontend/emeet/img/info-icon2.png" alt="Transport"/>
-                                                <h3 class="title">Transport</h3>
-                                                <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do incididunt</p>
-                                            </div>
-                                            <div class="lgx-travelinfo-single">
-                                                <img src="assets/_frontend/emeet/img/info-icon3.png" alt="Hotel & Restaurant"/>
-                                                <h3 class="title">Hotel & Restaurant</h3>
-                                                <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do incididunt</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--//.ROW-->
-                            </div>
-                            <!-- //.CONTAINER -->
+                    <div class="container">
+                        <div class="lgx-heading">
+                            <h2 class="heading text-center">EVENT INFORMATION</h2>
+                            <h3 class="subheading text-center">Conferences dedicated to building remarkable events.</h3>
+                            <hr/>
                         </div>
-                    </div>
+                        <div class="row">
+
+                            <div class="col-sm-12 col-md-6 col-md-offset-3">
+
+                                <form method="POST" class="lgx-contactform" action="php/form-handler.php">
+                                    <div class="form-group">
+                                        <input type="text" name="lgxname" class="form-control lgxname" id="lgxname" placeholder="Enter Your Name" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="email" name="lgxemail" class="form-control lgxemail" id="lgxemail" placeholder="Enter email" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" name="lgxsubject" class="form-control lgxsubject" id="lgxsubject" placeholder="Subject" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea class="form-control lgxmessage" name="lgxmessage" id="lgxmessage" rows="5" placeholder="We expect drop some line from you..." required></textarea>
+                                    </div>
+
+
+                                    <button type="submit" name="submit" value="contact-form" class="lgx-btn hvr-glow hvr-radial-out lgxsend lgx-send"><span>Send Massage</span></button>
+                                </form>
+
+                                <!-- MODAL SECTION -->
+                                <div id="lgx-form-modal" class="modal fade lgx-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content lgx-modal-content">
+                                            <div class="modal-header lgx-modal-header">
+                                                <button type="button" class="close brand-color-hover" data-dismiss="modal" aria-label="Close">
+                                                    <i class="fa fa-power-off"></i>
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <div class="alert lgx-form-msg" role="alert"></div>
+                                            </div> <!--//MODAL BODY-->
+
+                                        </div>
+                                    </div>
+                                </div> <!-- //MODAL -->
+
+                            </div> <!--//.COL-->
+                        </div>
+                    </div><!-- //.CONTAINER -->
                 </section>
-                <!--TRAVEL INFO END-->
+                <!--News END-->
+
             </div>
 
             <!--GOOGLE MAP-->
             <div class="innerpage-section">
-                <div class="lgxmapcanvas map-canvas-default" id="map_canvas"> </div>
+                <!-- <div class="lgxmapcanvas map-canvas-default" id="map_canvas"> </div> -->
+                <div class="lgxmapcanvas" id="map_canvas">
+                    <iframe class="lgxmapcanvas" style="left:0; width:100%; position:absolute;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJWzEmowH0aS4RnxDKg-thLgc&key=AIzaSyA4dsNK2jRj_v-bRRESoAdOypOzwYj8GFM&zoom=18"></iframe>
+                </div>
             </div>
             <!--GOOGLE MAP END-->
         </main>
@@ -231,7 +249,7 @@
     <script src="assets/_frontend/emeet/libs/jquery.validate.js"></script>
 
     <!-- if load google maps then load this api, change api key as it may expire for limit cross as this is provided with any theme -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIKbFTvAyZuB8CuFqSIEVEHmbqfDm6UD8"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4dsNK2jRj_v-bRRESoAdOypOzwYj8GFM"></script>
     <!-- CUSTOM GOOGLE MAP -->
     <!-- <script type="text/javascript" src="assets/_frontend/emeet/libs/gmap/jquery.googlemap.js"></script> -->
     <script type="text/javascript" src="assets/_frontend/emeet/libs/gmap/jquery.googlemap.js"></script>

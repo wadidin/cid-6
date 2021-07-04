@@ -504,7 +504,7 @@
 
                 dots: false,
 
-                navText: ["<img src='assets/_frontend/emeet/img/arrow-left.png'>","<img src='assets/_frontend/emeet/img/arrow-right.png'>"],
+                navText: ["<img src='./assets/_frontend/emeet/img/arrow-left.png'>","<img src='./assets/_frontend/emeet/img/arrow-right.png'>"],
 
                 autoplayTimeout: 5000,
 
@@ -642,7 +642,7 @@
 
                 dots: true,
 
-                navText: ["<img src='assets/_frontend/emeet/img/arrow-left-ash.png'>","<img src='assets/_frontend/emeet/img/arrow-right-ash.png'>"],
+                navText: ["<img src='./assets/_frontend/emeet/img/arrow-left-ash.png'>","<img src='./assets/_frontend/emeet/img/arrow-right-ash.png'>"],
 
                 autoplayTimeout: 5000,
 
@@ -845,6 +845,7 @@
          ========================================================================== */
 
         if (typeof google != 'undefined') {
+            
 
             //for Default  map
 
@@ -852,9 +853,9 @@
 
                 $(".map-canvas-default").googleMap({
 
-                    zoom: 8, // Initial zoom level (optiona
+                    zoom: 19, // Initial zoom level (optiona
 
-                    coords: [40.7127, 74.0059], // Map center (optional)
+                    coords: [-6.213630865785263, 106.8199288899862], // Map center (optional)
 
                     type: "ROADMAP", // Map type (optional),
 
@@ -868,13 +869,13 @@
 
                 $(".map-canvas-default").addMarker({
 
-                    coords: [40.7127, 74.0059], // GPS coords
+                    coords: [-6.213630865785263, 106.8199288899862], // GPS coords
 
-                    title: 'Eventpoint',
+                    title: 'Indonesian Diaspora Network Global',
 
                     text: '121 King St, Melbourne VIC 3000, Australia',
 
-                    icon: lgx_path + 'assets/_frontend/emeet/img/map/map-icon.png'
+                    icon: lgx_path + '/assets/_frontend/emeet/img/map/map-icon.png'
 
                 });
 
@@ -906,11 +907,11 @@
 
                     coords: [40.7127, 74.0059], // GPS coords
 
-                    title: 'Eventpoint',
+                    title: 'Indonesian Diaspora Network Global',
 
                     text: '121 King St, Melbourne VIC 3000, Australia',
 
-                    icon: lgx_path + 'assets/_frontend/emeet/img/map/map-icon.png'
+                    icon: lgx_path + '/assets/_frontend/emeet/img/map/map-icon.png'
 
                 });
 
