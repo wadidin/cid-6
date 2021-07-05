@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Title -->
-    <title>IDN Global :: Contact Us</title>
+    <title>IDN Global :: Agenda</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -39,7 +39,6 @@
 
     <!-- GOOGLE FONT -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700%7cRaleway:300,400,400i,500,600,700,900"/>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <!-- MASTER  STYLESHEET  -->
     <link id="lgx-master-style" rel="stylesheet" href="assets/_frontend/emeet/css/style-red.min.css" media="all"/>
@@ -94,9 +93,9 @@
                                 <ul class="nav navbar-nav lgx-nav navbar-right">
                                     <li><a class="lgx-scroll" href="index.html">Home</a></li>
                                     <li><a class="lgx-scroll" href="about-us.html">About Us</a></li>
-                                    <li><a class="lgx-scroll" href="agenda.html">Agenda</a></li>
+                                    <li class="active"><a class="lgx-scroll" href="agenda.html">Agenda</a></li>
                                     <li><a class="lgx-scroll" href="speakers.html">Speakers</a></li>
-                                    <li class="active"><a class="lgx-scroll" href="contact-us.html">Contact Us</a></li>
+                                    <li><a class="lgx-scroll" href="contact-us.html">Contact Us</a></li>
                                 </ul>
                             </div><!--/.nav-collapse -->
                         </nav>
@@ -116,11 +115,11 @@
                             <div class="col-xs-12">
                                 <div class="lgx-heading-area">
                                     <div class="lgx-heading lgx-heading-white">
-                                        <h2 class="heading">Contact Us</h2>
+                                        <h2 class="heading">Agenda</h2>
                                     </div>
                                     <ul class="breadcrumb">
                                         <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                                        <li class="active">Contact Us</li>
+                                        <li class="active">Agenda</li>
                                     </ul>
                                 </div>
                             </div>
@@ -131,77 +130,73 @@
         </section> <!--//.Banner Inner-->
 
         <main>
-            <div class="lgx-page-wrapper">
-                <!--News-->
+            <div class="lgx-page-wrapper lgx-page-wrapper-none">
+                
+                <!--AGENDA-->
                 <section>
-                    <div class="container">
-                        <div class="lgx-heading">
-                            <h2 class="heading text-center">EVENT INFORMATION</h2>
-                            <h3 class="subheading text-center" style="color:#e62b4c">Conferences dedicated to building remarkable events.</h3>
-                            <hr/>
-                            <p class="text text-center">
-                                This year, Indonesian Diaspora Network Global (IDN-Global) is thrilled to present the the 6th Congress of Indonesian Diaspora (CID-6) in August 2021. CID is a biannual event to connect Indonesians living abroad with their tanah air or homeland and serve as a platform for them to contribute to national development. With our current theme “Post Covid-19: A Stronger Indonesia with Diaspora”, we believe Indonesia could emerge even stronger after this challenging pandemic with the active contribution and participation of different stakeholders including the Indonesian diaspora.
-                            </p>
-                        </div>
-                        <br/>
-
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 col-md-offset-3">
-                                <form method="POST" class="lgx-contactform" action="php/form-handler.php">
-                                    <div class="form-group">
-                                        <input type="text" name="lgxname" class="form-control lgxname" id="lgxname" placeholder="Enter Your Name" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <input type="email" name="lgxemail" class="form-control lgxemail" id="lgxemail" placeholder="Enter email" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <input type="text" name="lgxsubject" class="form-control lgxsubject" id="lgxsubject" placeholder="Subject" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <textarea class="form-control lgxmessage" name="lgxmessage" id="lgxmessage" rows="5" placeholder="We expect drop some line from you..." required></textarea>
-                                    </div>
-
-
-                                    <button type="submit" name="submit" value="contact-form" class="lgx-btn hvr-glow hvr-radial-out lgxsend lgx-send"><span>Send Massage</span></button>
-                                </form>
-
-                                <!-- MODAL SECTION -->
-                                <div id="lgx-form-modal" class="modal fade lgx-form-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content lgx-modal-content">
-                                            <div class="modal-header lgx-modal-header">
-                                                <button type="button" class="close brand-color-hover" data-dismiss="modal" aria-label="Close">
-                                                    <i class="fa fa-power-off"></i>
-                                                </button>
-                                            </div>
-
-                                            <div class="modal-body">
-                                                <div class="alert lgx-form-msg" role="alert"></div>
-                                            </div> <!--//MODAL BODY-->
-
+                    <div id="lgx-news" class="lgx-news">
+                        <div class="lgx-inner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="lgx-heading">
+                                            <h2 class="heading">From Our Agenda</h2>
+                                            <h3 class="subheading" style="color:#e62b4c">Conferences dedicated to building remarkable events.</h3>
                                         </div>
                                     </div>
-                                </div> <!-- //MODAL -->
-
-                            </div> <!--//.COL-->
-                        </div>
-                    </div><!-- //.CONTAINER -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                                        <div class="lgx-single-news">
+                                            <figure>
+                                                <a href="seminar.html"><img src="assets/images/agenda/news1.jpg" alt="agenda"></a>
+                                            </figure>
+                                            <div class="single-news-info">
+                                                <h3 class="title"><a href="#">Impactful Seminar</a></h3>
+                                                <a class="lgx-btn lgx-btn-red lgx-btn-sm" href="seminar.html"><span>View More</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                                        <div class="lgx-single-news">
+                                            <figure>
+                                                <a href="showcase.html"><img src="assets/images/agenda/news2.jpg" alt="afenda"></a>
+                                            </figure>
+                                            <div class="single-news-info">
+                                                <h3 class="title"><a href="#">Diaspora Showcase</a></h3>
+                                                <a class="lgx-btn lgx-btn-red lgx-btn-sm" href="showcase.html"><span>View More</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                                        <div class="lgx-single-news">
+                                            <figure>
+                                                <a href="forum.html"><img src="assets/images/agenda/news3.jpg" alt="agenda"></a>
+                                            </figure>
+                                            <div class="single-news-info">
+                                                <h3 class="title"><a href="#">Diaspora Open Forum</a></h3>
+                                                <a class="lgx-btn lgx-btn-red lgx-btn-sm" href="forum.html"><span>View More</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                                        <div class="lgx-single-news">
+                                            <figure>
+                                                <a href="performance.html"><img src="assets/images/agenda/news3.jpg" alt="agenda"></a>
+                                            </figure>
+                                            <div class="single-news-info">
+                                                <h3 class="title"><a href="#">Music and Entertainment</a></h3>
+                                                <a class="lgx-btn lgx-btn-red lgx-btn-sm" href="performance.html"><span>View More</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- //.CONTAINER -->
+                        </div><!-- //.INNER -->
+                    </div>
                 </section>
-                <!--News END-->
-
+                <!--AGENDA END-->
             </div>
-
-            <!--GOOGLE MAP-->
-            <div class="innerpage-section">
-                <!-- <div class="lgxmapcanvas map-canvas-default" id="map_canvas"> </div> -->
-                <div class="lgxmapcanvas" id="map_canvas">
-                    <iframe class="lgxmapcanvas" style="left:0; width:100%; position:absolute;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJWzEmowH0aS4RnxDKg-thLgc&key=AIzaSyA4dsNK2jRj_v-bRRESoAdOypOzwYj8GFM&zoom=18"></iframe>
-                </div>
-            </div>
-            <!--GOOGLE MAP END-->
         </main>
 
         <!-- back to top -->
@@ -273,8 +268,8 @@
 
     <!-- if load google maps then load this api, change api key as it may expire for limit cross as this is provided with any theme -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4dsNK2jRj_v-bRRESoAdOypOzwYj8GFM"></script>
+
     <!-- CUSTOM GOOGLE MAP -->
-    <!-- <script type="text/javascript" src="assets/_frontend/emeet/libs/gmap/jquery.googlemap.js"></script> -->
     <script type="text/javascript" src="assets/_frontend/emeet/libs/gmap/jquery.googlemap.js"></script>
 
     <!-- adding magnific popup js library -->
